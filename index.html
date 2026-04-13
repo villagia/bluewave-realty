@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real Estate in Batumi | Sales, Rentals &amp; Investments | Blue Wave Real Estate</title>
+    <meta name="description" content="Real estate in Batumi with Tamara – trusted agent for property sales, rentals, investments, and property management. Personalized support in English, Russian, and local languages.">
+    <meta name="keywords" content="Batumi real estate, Batumi apartments, Batumi property for sale, Batumi rentals, Batumi investment property, Georgia real estate, property management Batumi, Blue Wave Real Estate">
+    <meta name="author" content="Blue Wave Real Estate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Real Estate in Batumi – Sales, Rentals &amp; Investments">
+    <meta property="og:description" content="Real estate in Batumi with Tamara – trusted agent for property sales, rentals, investments, and property management. Personalized support in English, Russian, and local languages.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/blue_wave_hero.jpg">
+    <meta property="og:site_name" content="Blue Wave Real Estate">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/favicon-32x32.png">
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-ocean-blue: #0A84D6;
+            --color-deep-navy: #0A2740;
+            --color-warm-sand: #F4A259;
+            --color-soft-sky: #E6F2FB;
+            --color-white: #FFFFFF;
+            --color-light-gray: #E3E6EC;
+            --color-charcoal: #333843;
+            --color-whatsapp: #25D366;
+
+            --shadow-soft: 0 18px 45px rgba(10, 39, 64, 0.12);
+            --radius-card: 1.25rem;
+            --radius-pill: 999px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--color-charcoal);
+            background-color: var(--color-white);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: "Lora", "Times New Roman", serif;
+            color: var(--color-deep-navy);
+        }
+
+        a {
+            color: var(--color-ocean-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section-padding {
+            padding-block: clamp(3.5rem, 6vw, 5rem);
+        }
+
+        .section-heading {
+            margin-bottom: 0.75rem;
+            font-size: clamp(1.75rem, 3vw, 2.25rem);
+            font-weight: 700;
+        }
+
+        .section-subheading {
+            max-width: 40rem;
+            color: var(--color-charcoal);
+            margin-bottom: clamp(2rem, 3vw, 2.5rem);
+        }
+
+        /* Navbar */
+        .navbar-glass {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            backdrop-filter: blur(14px);
+            background: rgba(255, 255, 255, 0.75);
+            box-shadow: 0 10px 30px rgba(10, 39, 64, 0.05);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .navbar-glass.navbar-solid {
+            background: rgba(255, 255, 255, 0.97);
+            box-shadow: 0 10px 35px rgba(10, 39, 64, 0.12);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            color: var(--color-deep-navy);
+            font-size: 1.05rem;
+        }
+
+        .navbar-brand img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-charcoal);
+            padding-inline: 0.85rem;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: var(--color-ocean-blue);
+        }
+
+        .navbar-toggler {
+            border-color: rgba(10, 39, 64, 0.2);
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(20%) sepia(24%) saturate(1100%) hue-rotate(171deg) brightness(90%) contrast(90%);
+        }
+
+        .navbar-collapse {
+            transition: max-height 0.3s ease;
+        }
+
+        .navbar-social {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .icon-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-ocean-blue);
+            transition: transform 0.2s ease;
+        }
+
+        .icon-circle:hover {
+            transform: translateY(-1px);
+            text-decoration: none;
+        }
+
+        .material-icons {
+            font-size: 1.2rem;
+        }
+
+        .whatsapp-icon {
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .telegram-icon {
+            display: inline-block;
+            width: 1.7rem;
+            height: 1.7rem;
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .navbar-social {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-1px);
+            text-decoration: none;
+            opacity: 0.9;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-link--facebook .social-icon {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: transparent;
+            color: #1877F2;
+            font-size: 2rem;
+        }
+
+        .footer-social .social-link--facebook .social-icon {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .social-link--whatsapp .whatsapp-icon {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        /* Buttons */
+        a.btn:hover,
+        a.btn:focus {
+            text-decoration: none;
+        }
+
+        .btn-with-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .btn-call-now {
+            text-transform: uppercase;
+        }
+
+        .btn-call-now .whatsapp-icon {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .btn-primary-brand {
+            background-color: var(--color-ocean-blue);
+            border-color: var(--color-ocean-blue);
+            color: var(--color-white);
+            border-radius: var(--radius-pill);
+            padding-inline: 1.7rem;
+            padding-block: 0.75rem;
+            font-weight: 500;
+            font-size: 0.98rem;
+            box-shadow: 0 10px 25px rgba(10, 132, 214, 0.35);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+        }
+
+        .btn-primary-brand:hover,
+        .btn-primary-brand:focus {
+            background-color: #076bb0;
+            border-color: #076bb0;
+            box-shadow: 0 12px 28px rgba(10, 132, 214, 0.45);
+            transform: translateY(-1px);
+            color: var(--color-white);
+        }
+
+        .btn-outline-sand {
+            border-radius: var(--radius-pill);
+            border: 1.5px solid var(--color-warm-sand);
+            color: var(--color-warm-sand);
+            background: transparent;
+            padding-inline: 1.5rem;
+            padding-block: 0.75rem;
+            font-weight: 500;
+            font-size: 0.96rem;
+            transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .btn-outline-sand:hover,
+        .btn-outline-sand:focus {
+            background-color: var(--color-warm-sand);
+            color: var(--color-deep-navy);
+            box-shadow: 0 10px 25px rgba(244, 162, 89, 0.45);
+            transform: translateY(-1px);
+        }
+
+        .btn-link-inline {
+            padding: 0;
+            border: none;
+            background: none;
+            color: var(--color-ocean-blue);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .btn-link-inline .material-icons {
+            font-size: 1.1rem;
+        }
+
+        /* Hero */
+        .hero-section {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: var(--color-white);
+            background-image: linear-gradient(115deg, rgba(5, 15, 20, 0.78), rgba(10, 50, 80, 0.75)), url("https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/blue_wave_hero.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-block: clamp(2rem, 8vw, 6.5rem);
+        }
+
+        .hero-inner {
+            max-width: 72rem;
+            margin-inline: auto;
+            padding-inline: clamp(1.5rem, 4vw, 3rem);
+        }
+
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.25rem 0.9rem;
+            border-radius: var(--radius-pill);
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #e5f3ff;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-title {
+            font-size: clamp(2.4rem, 4vw, 3.1rem);
+            line-height: 1.12;
+            margin-bottom: 1rem;
+            color: #fdfdfd;
+        }
+
+        .hero-subtitle {
+            max-width: 32rem;
+            font-size: clamp(1rem, 1.4vw, 1.12rem);
+            color: #e3f1ff;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-bullets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem 1.25rem;
+            margin-bottom: 1.8rem;
+            font-size: 0.95rem;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.9rem;
+            border-radius: var(--radius-pill);
+            background-color: rgba(10, 132, 214, 0.22);
+            color: #f5fbff;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-badge .material-icons {
+            font-size: 1.1rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-note {
+            font-size: 0.9rem;
+            color: #e7f3ff;
+        }
+
+        .hero-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+            gap: clamp(2rem, 4vw, 3rem);
+            align-items: center;
+        }
+
+        .hero-agent-card {
+            max-width: 21.5rem;
+            margin-left: auto;
+            border-radius: 1.8rem;
+            padding: 0.2rem;
+            background: linear-gradient(135deg, rgba(135, 206, 255, 0.9), rgba(3, 60, 117, 0.95));
+            box-shadow: var(--shadow-soft);
+        }
+
+        .agent-card-shell {
+            border-radius: inherit;
+            overflow: hidden;
+            background: linear-gradient(140deg, #0a84d6 0%, #06406a 55%, #021827 100%);
+            display: flex;
+            flex-direction: column;
+            min-height: 21rem;
+        }
+
+        .agent-visual {
+            flex: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.6rem 1.6rem;
+        }
+
+        .agent-photo-wrapper {
+            position: relative;
+            width: 50%;
+            max-width: 8.25rem;
+            aspect-ratio: 3 / 4;
+            background-color: #E5E7EB;
+            border-radius: 1.1rem;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.75);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.55);
+        }
+
+        .agent-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+
+        .agent-info-band {
+            background: linear-gradient(135deg, #3aa0f3 0%, #1a73d6 40%, #0d4580 100%);
+            padding: 1.5rem 1.4rem 1.5rem;
+            color: #e5f3ff;
+            border-top: 1px solid rgba(255, 255, 255, 0.22);
+        }
+
+        .agent-content {
+            margin-top: 0;
+        }
+
+        .agent-header {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .agent-avatar {
+            display: none;
+        }
+
+        .agent-name {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 1.08rem;
+        }
+
+        .agent-role {
+            font-size: 0.8rem;
+            color: #d1e5ff;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .agent-body {
+            font-size: 0.88rem;
+            color: #e5f3ff;
+            margin-bottom: 0.7rem;
+        }
+
+        .agent-contact {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-top: 0.4rem;
+            font-size: 0.9rem;
+        }
+
+        .agent-contact-label {
+            color: rgba(229, 243, 255, 0.9);
+            letter-spacing: 0.16em;
+        }
+
+        .agent-contact a {
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .agent-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .agent-rating {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            background-color: rgba(244, 162, 89, 0.12);
+            border: 1px solid rgba(244, 162, 89, 0.65);
+            font-size: 0.78rem;
+            color: #fed7aa;
+        }
+
+        .agent-rating .material-icons {
+            font-size: 1rem;
+        }
+
+        /* About */
+        #about {
+            background-color: var(--color-white);
+        }
+
+        .about-portrait {
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-portrait-inner {
+            border-radius: 0;
+            padding: 0;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .about-portrait-frame {
+            border-radius: 0;
+            overflow: hidden;
+            background-color: transparent;
+            border: none;
+            max-width: 11rem;
+            aspect-ratio: 3 / 4;
+        }
+
+        .about-portrait-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+
+        .about-portrait-mobile {
+            float: left;
+            margin: 0 1rem 0.75rem 0;
+        }
+
+        .about-portrait-mobile .about-portrait-inner {
+            box-shadow: none;
+        }
+
+        .about-portrait-desktop .about-portrait-frame {
+            max-width: 13rem;
+        }
+
+        .about-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .about-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.6rem;
+            margin-bottom: 0.7rem;
+            font-size: 0.95rem;
+        }
+
+        .about-list .material-icons {
+            font-size: 1rem;
+            margin-top: 0.15rem;
+            color: var(--color-ocean-blue);
+        }
+
+        .about-trust-line {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #4B5563;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: clamp(1.4rem, 2.5vw, 1.9rem);
+        }
+
+        .service-card {
+            background-color: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: 1.5rem 1.4rem;
+            border: 1px solid var(--color-light-gray);
+            box-shadow: 0 10px 26px rgba(10, 39, 64, 0.04);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(10, 132, 214, 0.08);
+            color: var(--color-ocean-blue);
+            margin-bottom: 0.9rem;
+        }
+
+        .service-icon .material-icons {
+            font-size: 1.5rem;
+        }
+
+        .service-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            color: var(--color-deep-navy);
+        }
+
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #4B5563;
+        }
+
+        .service-list li + li {
+            margin-top: 0.3rem;
+        }
+
+        .services-cta {
+            margin-top: 1.75rem;
+            font-size: 0.95rem;
+        }
+
+        /* Investments & Management */
+        #investments {
+            background-color: var(--color-soft-sky);
+        }
+
+        .info-card {
+            background-color: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: 1.5rem 1.6rem;
+            box-shadow: 0 12px 30px rgba(10, 39, 64, 0.06);
+            height: 100%;
+        }
+
+        .info-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            font-size: 0.95rem;
+            color: #4B5563;
+        }
+
+        .info-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0.75rem 0 0;
+            font-size: 0.9rem;
+            color: #4B5563;
+        }
+
+        .info-list li {
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+            margin-bottom: 0.4rem;
+        }
+
+        .info-list .material-icons {
+            font-size: 1.05rem;
+            margin-top: 0.08rem;
+            color: var(--color-ocean-blue);
+        }
+
+        /* Featured Properties */
+        .property-card {
+            background-color: var(--color-white);
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            border: 1px solid var(--color-light-gray);
+            box-shadow: 0 14px 30px rgba(10, 39, 64, 0.06);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .property-image {
+            background: linear-gradient(135deg, #0A84D6 0%, #0A2740 50%, #F4A259 100%);
+            height: 10rem;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            padding: 0.9rem 1.1rem;
+            color: #F9FAFB;
+        }
+
+        .property-image span {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .property-body {
+            padding: 1.1rem 1.2rem 1.2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .property-body h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .property-body p {
+            font-size: 0.92rem;
+            color: #4B5563;
+            margin-bottom: 0.75rem;
+        }
+
+        .property-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: auto;
+        }
+
+        .property-tag {
+            padding: 0.15rem 0.55rem;
+            border-radius: var(--radius-pill);
+            background-color: #EFF6FF;
+            color: #1D4ED8;
+            font-size: 0.78rem;
+            font-weight: 500;
+        }
+
+        /* Why Work With Me */
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: clamp(1.4rem, 2.5vw, 1.9rem);
+        }
+
+        .reason-card {
+            background-color: var(--color-white);
+            border-radius: 1.1rem;
+            border: 1px solid #E5E7EB;
+            padding: 1.3rem 1.25rem;
+            height: 100%;
+        }
+
+        .reason-icon {
+            width: 2.1rem;
+            height: 2.1rem;
+            border-radius: 0.9rem;
+            background-color: rgba(10, 132, 214, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.7rem;
+            color: var(--color-ocean-blue);
+        }
+
+        .reason-icon .material-icons {
+            font-size: 1.35rem;
+        }
+
+        .reason-title {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.35rem;
+            color: var(--color-deep-navy);
+        }
+
+        .reason-text {
+            font-size: 0.9rem;
+            color: #4B5563;
+        }
+
+        /* Process */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: clamp(1.2rem, 2.5vw, 1.7rem);
+            position: relative;
+        }
+
+        .process-step {
+            background-color: var(--color-white);
+            border-radius: 1.1rem;
+            border: 1px solid #E5E7EB;
+            padding: 1.2rem 1.1rem;
+            position: relative;
+        }
+
+        .process-step-number {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.85rem;
+            background-color: rgba(10, 132, 214, 0.08);
+            color: var(--color-ocean-blue);
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.55rem;
+        }
+
+        .process-step-title {
+            font-weight: 600;
+            font-size: 0.98rem;
+            margin-bottom: 0.3rem;
+            color: var(--color-deep-navy);
+        }
+
+        .process-step-text {
+            font-size: 0.9rem;
+            color: #4B5563;
+        }
+
+        /* FAQs */
+        #faqs {
+            background-color: #F9FBFF;
+        }
+
+        .faq-accordion .accordion-item {
+            border-radius: 0.9rem;
+            overflow: hidden;
+            border: 1px solid #E5E7EB;
+            background-color: var(--color-white);
+        }
+
+        .faq-accordion .accordion-item + .accordion-item {
+            margin-top: 0.8rem;
+        }
+
+        .faq-accordion .accordion-button {
+            font-weight: 500;
+            font-size: 0.98rem;
+            padding-block: 0.95rem;
+        }
+
+        .faq-accordion .accordion-button:not(.collapsed) {
+            color: var(--color-deep-navy);
+            background-color: #F1F5FD;
+        }
+
+        .faq-accordion .accordion-body {
+            font-size: 0.92rem;
+            color: #4B5563;
+        }
+
+        /* Contact */
+        .contact-info-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0 0 1.6rem;
+        }
+
+        .contact-info-list li {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            margin-bottom: 0.7rem;
+        }
+
+        .contact-icon {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.75rem;
+            background-color: rgba(10, 132, 214, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-ocean-blue);
+        }
+
+        .contact-icon .material-icons {
+            font-size: 1.35rem;
+        }
+
+        .contact-map-placeholder {
+            border-radius: var(--radius-card);
+            border: 1px dashed #CBD5F5;
+            padding: 1.3rem 1.4rem;
+            background: #F8FAFF;
+            font-size: 0.92rem;
+            color: #4B5563;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-deep-navy);
+            color: #E5E7EB;
+            padding-top: 2.5rem;
+            padding-bottom: 1.25rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .footer-logo img {
+            width: 28px;
+            height: 28px;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.9rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-nav a {
+            color: #E5E7EB;
+            text-decoration: none;
+        }
+
+        .footer-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.4rem;
+            align-items: center;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(148, 163, 184, 0.35);
+            margin-top: 1.6rem;
+            padding-top: 0.75rem;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #9CA3AF;
+        }
+
+        .footer-contact {
+            font-size: 0.85rem;
+            color: #CBD5F5;
+        }
+
+        .footer-contact a {
+            color: #E5E7EB;
+        }
+
+        /* Modals */
+        .modal-header {
+            position: relative;
+            align-items: flex-start;
+            padding-right: 4rem;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .modal-header .btn-close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .modal-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-deep-navy);
+        }
+
+        .modal-subtitle {
+            font-size: 0.9rem;
+            color: #4B5563;
+            margin-top: 0.2rem;
+        }
+
+        .form-label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-deep-navy);
+        }
+
+        .form-control {
+            border-radius: 0.7rem;
+            border-color: #D1D5DB;
+            font-size: 0.9rem;
+        }
+
+        .form-control:focus {
+            border-color: var(--color-ocean-blue);
+            box-shadow: 0 0 0 0.15rem rgba(10, 132, 214, 0.25);
+        }
+
+        .form-status {
+            margin-top: 0.75rem;
+            font-size: 0.88rem;
+        }
+
+        .form-status-success {
+            color: #15803D;
+        }
+
+        .form-status-error {
+            color: #B91C1C;
+        }
+
+        .email-modal-link {
+            cursor: pointer;
+        }
+
+        .calendly-inline-widget {
+            min-width: 100%;
+            height: 620px;
+        }
+
+        /* Utilities */
+        .max-w-2xl {
+            max-width: 40rem;
+        }
+
+        .max-w-3xl {
+            max-width: 48rem;
+        }
+
+        .text-small {
+            font-size: 0.86rem;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-glass {
+                background-color: rgba(255, 255, 255, 0.98);
+            }
+
+            .about-portrait-desktop {
+                display: none;
+            }
+
+            .navbar-collapse {
+                padding-top: 0.5rem;
+            }
+
+            .navbar-nav .nav-link {
+                padding-block: 0.4rem;
+            }
+
+            .hero-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .hero-agent-card {
+                margin-left: 0;
+                margin-top: 1.2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .reasons-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .process-steps {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .about-portrait-mobile {
+                max-width: 7.5rem;
+            }
+
+            .hero-bullets {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero-agent-card {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .reasons-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .process-steps {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .property-image {
+                height: 9.5rem;
+            }
+
+            .navbar-social {
+                margin-top: 0.75rem;
+            }
+
+            .contact-btns {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .calendly-inline-widget {
+                height: 520px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                scroll-behavior: auto !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-glass">
+        <div class="container">
+            <a class="navbar-brand" href="#top">
+                <img src="https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/favicon-32x32.png" alt="Blue Wave Real Estate logo">
+                <span>Blue Wave Real Estate</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-lg-auto ms-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#investments">Investments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+                    <div class="navbar-social social-links">
+                        <a class="social-link social-link--facebook" href="https://www.facebook.com/profile.php?id=100070818982111" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <span class="material-icons social-icon" aria-hidden="true">facebook</span>
+                        </a>
+                        <a class="social-link social-link--telegram" href="tg://resolve?phone=995557914194" aria-label="Telegram call via app">
+                            <span class="telegram-icon social-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="social-link social-link--whatsapp" href="https://wa.me/995557914194" target="_blank" rel="noopener noreferrer" aria-label="Call on WhatsApp">
+                            <span class="whatsapp-icon social-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="hero-inner">
+            <div class="hero-layout">
+                <div>
+                    <div class="hero-label">
+                        <span class="material-icons" aria-hidden="true">waves</span>
+                        <span>Real Estate in Batumi</span>
+                    </div>
+                    <h1 class="hero-title">Find Your Ideal Property in Batumi</h1>
+                    <p class="hero-subtitle">
+                        Sales, rentals, and investments with a trusted local agent – Tamara. From beachside apartments to long‑term investments, I guide you every step of the way.
+                    </p>
+                    <div class="hero-bullets">
+                        <div class="hero-badge">
+                            <span class="material-icons" aria-hidden="true">home</span>
+                            <span>Sales &amp; rentals</span>
+                        </div>
+                        <div class="hero-badge">
+                            <span class="material-icons" aria-hidden="true">trending_up</span>
+                            <span>Investment properties</span>
+                        </div>
+                        <div class="hero-badge">
+                            <span class="material-icons" aria-hidden="true">manage_accounts</span>
+                            <span>Property management</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary-brand btn-with-icon btn-call-now" href="https://wa.me/995557914194" target="_blank" rel="noopener noreferrer">
+                            <span class="whatsapp-icon" aria-hidden="true"></span>
+                            <span>Call Now</span>
+                        </a>
+                    </div>
+                    <p class="hero-note text-small">
+                        Personal, multilingual support for buyers, renters, and investors.
+                    </p>
+                </div>
+
+                <aside class="hero-agent-card" aria-label="Information about Tamara">
+                    <div class="agent-card-shell">
+                        <div class="agent-visual">
+                            <div class="agent-photo-wrapper">
+                                <img class="agent-photo" src="https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/Tamara%20potrait.jpeg" alt="Tamara, real estate agent in Batumi">
+                            </div>
+                        </div>
+                        <div class="agent-info-band">
+                            <div class="agent-content">
+                                <div class="agent-header">
+                                    <div>
+                                        <div class="agent-name">Tamara</div>
+                                        <div class="agent-role">Real estate agent in Batumi</div>
+                                    </div>
+                                </div>
+                                <div class="agent-contact">
+                                    <div>
+                                        <div class="text-small text-muted text-uppercase agent-contact-label">Call or WhatsApp</div>
+                                        <a href="https://wa.me/995557914194" target="_blank" rel="noopener noreferrer">+995 557 91 41 94</a>
+                                    </div>
+                                    <div class="agent-rating">
+                                        <span class="material-icons" aria-hidden="true">verified</span>
+                                        <span>Local</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row gy-4 align-items-start">
+                <div class="col-lg-7">
+                    <h2 class="section-heading">Meet Tamara</h2>
+                    <p class="section-subheading">
+                        I’m Tamara, a real estate agent based in Batumi. I help clients from around the world buy, sell, and rent property in one of the fastest‑growing cities on the Black Sea.
+                    </p>
+                    <figure class="about-portrait about-portrait-mobile d-lg-none">
+                        <div class="about-portrait-inner">
+                            <div class="about-portrait-frame">
+                                <img class="about-portrait-img" src="https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/Tamara%20potrait.png" alt="Portrait of Tamara, real estate agent in Batumi">
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="max-w-3xl">
+                        <p>
+                            Whether you are looking for a cozy seaside apartment, a long‑term family home, or a high‑yield investment, I focus on understanding your goals first and then finding properties that truly match them.
+                        </p>
+                        <p>
+                            I work closely with reliable developers, owners, and local partners to ensure transparent deals and clear communication at every step of the process.
+                        </p>
+                        <p class="about-trust-line">
+                            You receive personal, multilingual support and practical guidance tailored to your budget, timeline, and plans in Batumi.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+                    <figure class="about-portrait about-portrait-desktop mb-0">
+                        <div class="about-portrait-inner">
+                            <div class="about-portrait-frame">
+                                <img class="about-portrait-img" src="https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/Tamara%20potrait.png" alt="Portrait of Tamara, real estate agent in Batumi">
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading text-center">Services</h2>
+            <p class="section-subheading text-center mx-auto">
+                Everything you need for property in Batumi – from the first search to ongoing management.
+            </p>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <span class="material-icons" aria-hidden="true">home</span>
+                    </div>
+                    <h3 class="service-title">Property Sales</h3>
+                    <ul class="service-list">
+                        <li>New builds and resale apartments across Batumi.</li>
+                        <li>Market analysis and pricing guidance before you decide.</li>
+                        <li>Full support from viewing to closing and handover.</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <span class="material-icons" aria-hidden="true">meeting_room</span>
+                    </div>
+                    <h3 class="service-title">Long‑ &amp; Short‑Term Rentals</h3>
+                    <ul class="service-list">
+                        <li>Apartments for living, relocation, or vacation stays.</li>
+                        <li>Tenant screening, contracts, and move‑in coordination.</li>
+                        <li>Furnished and unfurnished options to match your plans.</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <span class="material-icons" aria-hidden="true">trending_up</span>
+                    </div>
+                    <h3 class="service-title">Investment Properties</h3>
+                    <ul class="service-list">
+                        <li>High‑yield projects in established and growing areas.</li>
+                        <li>Rental income strategies aligned with your risk profile.</li>
+                        <li>ROI estimates and realistic risk overview.</li>
+                    </ul>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <span class="material-icons" aria-hidden="true">manage_accounts</span>
+                    </div>
+                    <h3 class="service-title">Property Management</h3>
+                    <ul class="service-list">
+                        <li>Check‑ins, inspections, and regular reporting.</li>
+                        <li>Utility payments and maintenance coordination.</li>
+                        <li>Guest hosting support for short‑term rentals.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="services-cta text-center">
+                <span>Not sure which service you need?</span>
+                <button type="button" class="btn-link-inline" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <span>Ask Tamara</span>
+                    <span class="material-icons" aria-hidden="true">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investments & Property Management -->
+    <section id="investments" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading text-center">Investments &amp; Property Management</h2>
+            <p class="section-subheading text-center mx-auto">
+                Batumi is a fast‑growing coastal city with strong tourism and rental potential. I help you navigate the numbers and the day‑to‑day details.
+            </p>
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <article class="info-card">
+                        <h3>Investing in Batumi</h3>
+                        <p>
+                            From sea‑view apartments to new developments, Batumi offers a range of opportunities for investors looking for stable rental income and long‑term growth.
+                        </p>
+                        <ul class="info-list">
+                            <li>
+                                <span class="material-icons" aria-hidden="true">check_circle</span>
+                                <span>Beachfront and city‑center apartments with strong demand.</span>
+                            </li>
+                            <li>
+                                <span class="material-icons" aria-hidden="true">check_circle</span>
+                                <span>Off‑plan projects with attractive pricing and staged payments.</span>
+                            </li>
+                            <li>
+                                <span class="material-icons" aria-hidden="true">check_circle</span>
+                                <span>Support with local regulations, market data, and rental projections.</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-6">
+                    <article class="info-card">
+                        <h3>Hands‑Off Ownership</h3>
+                        <p>
+                            Many clients own in Batumi while living abroad. With structured property management, your home or investment is looked after professionally.
+                        </p>
+                        <ul class="info-list">
+                            <li>
+                                <span class="material-icons" aria-hidden="true">check_circle</span>
+                                <span>Daily operations, guest support, and key handovers.</span>
+                            </li>
+                            <li>
+                                <span class="material-icons" aria-hidden="true">check_circle</span>
+                                <span>Reliable cleaning, inspections, and basic maintenance.</span>
+                            </li>
+                            <li>
+                                <span class="material-icons" aria-hidden="true">check_circle</span>
+                                <span>Monthly reports on occupancy, income, and key updates.</span>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a class="btn btn-primary-brand btn-with-icon btn-call-now" href="https://wa.me/995557914194" target="_blank" rel="noopener noreferrer">
+                    <span class="whatsapp-icon" aria-hidden="true"></span>
+                    <span>Call Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="featured" class="section-padding d-none">
+        <div class="container">
+            <h2 class="section-heading text-center visually-hidden">Sample Properties in Batumi</h2>
+            <p class="section-subheading text-center mx-auto">
+                A quick look at the types of homes and investments I work with.
+            </p>
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <article class="property-card">
+                        <div class="property-image" aria-hidden="true">
+                            <span>Seaside Apartment</span>
+                        </div>
+                        <div class="property-body">
+                            <h3>Modern 1‑bedroom with sea view</h3>
+                            <p>Bright apartment close to the promenade, ideal for holiday rentals and weekend getaways.</p>
+                            <div class="property-tags">
+                                <span class="property-tag">Old Boulevard</span>
+                                <span class="property-tag">Sea View</span>
+                                <span class="property-tag">High ROI</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="property-card">
+                        <div class="property-image" aria-hidden="true">
+                            <span>City‑Center Residence</span>
+                        </div>
+                        <div class="property-body">
+                            <h3>Spacious 2‑bedroom</h3>
+                            <p>Comfortable home near shops and schools, designed for long‑term living and relocation.</p>
+                            <div class="property-tags">
+                                <span class="property-tag">City Center</span>
+                                <span class="property-tag">Family‑friendly</span>
+                                <span class="property-tag">Long‑term</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="property-card">
+                        <div class="property-image" aria-hidden="true">
+                            <span>New Development Studio</span>
+                        </div>
+                        <div class="property-body">
+                            <h3>Off‑plan studio apartment</h3>
+                            <p>Modern studio in a growing area, with developer guarantees and flexible payment plans.</p>
+                            <div class="property-tags">
+                                <span class="property-tag">Off‑plan</span>
+                                <span class="property-tag">Growth Area</span>
+                                <span class="property-tag">Investment</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="button" class="btn btn-outline-sand" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">
+                    See More Options
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me -->
+    <section id="why" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading text-center">Why Work With Me</h2>
+            <p class="section-subheading text-center mx-auto">
+                Clear communication, practical advice, and a focus on your long‑term success in Batumi.
+            </p>
+            <div class="reasons-grid">
+                <article class="reason-card">
+                    <div class="reason-icon">
+                        <span class="material-icons" aria-hidden="true">location_city</span>
+                    </div>
+                    <h3 class="reason-title">Local Expertise</h3>
+                    <p class="reason-text">
+                        Real, on‑the‑ground knowledge of Batumi neighborhoods, new developments, and what performs well long‑term.
+                    </p>
+                </article>
+                <article class="reason-card">
+                    <div class="reason-icon">
+                        <span class="material-icons" aria-hidden="true">insights</span>
+                    </div>
+                    <h3 class="reason-title">Investor‑Friendly</h3>
+                    <p class="reason-text">
+                        Clear numbers, realistic rental projections, and transparent discussions about risks and opportunities.
+                    </p>
+                </article>
+                <article class="reason-card">
+                    <div class="reason-icon">
+                        <span class="material-icons" aria-hidden="true">handshake</span>
+                    </div>
+                    <h3 class="reason-title">End‑to‑End Support</h3>
+                    <p class="reason-text">
+                        From the first consultation to property management after purchase, I stay involved as your trusted partner.
+                    </p>
+                </article>
+                <article class="reason-card">
+                    <div class="reason-icon">
+                        <span class="material-icons" aria-hidden="true">person</span>
+                    </div>
+                    <h3 class="reason-title">Personal Approach</h3>
+                    <p class="reason-text">
+                        You work directly with me, not a large anonymous team – with quick responses and tailored advice.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQs -->
+    <section id="faqs" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading text-center">Frequently Asked Questions</h2>
+            <p class="section-subheading text-center mx-auto">
+                Answers to the questions buyers, renters, and investors most often ask me about Batumi real estate.
+            </p>
+            <div class="accordion faq-accordion max-w-3xl mx-auto" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                            What types of properties do you specialize in?
+                        </button>
+                    </h3>
+                    <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I focus on apartments and residential units in Batumi, including new developments, resale properties, and holiday rentals. I also work with investors looking for high‑yield projects that match their budget and risk profile.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                            Can you help if I live outside Georgia?
+                        </button>
+                    </h3>
+                    <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes. Many of my clients are international. I can arrange virtual viewings, share detailed videos and photos, and guide you through each step of the buying or renting process remotely, staying in touch by phone, email, or messaging apps.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeadingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                            What is included in your property management service?
+                        </button>
+                    </h3>
+                    <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Property management can include guest communication, check‑ins and check‑outs, cleaning, basic maintenance coordination, bill payments, and monthly performance reports. The exact scope is tailored to the plan we agree on and your specific property.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeadingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                            How much do your services cost?
+                        </button>
+                    </h3>
+                    <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            For sales and rentals, my commission is usually paid by the seller or property owner and is transparent from the beginning. For property management and dedicated investment support, I offer clear pricing based on the level of service and reporting you need.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faqHeadingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                            How do we get started?
+                        </button>
+                    </h3>
+                    <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Simply book a short call or send me a message using the form on this page. Share your budget, preferred locations, and goals, and I will prepare a tailored list of options in Batumi for you to review.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row gy-4 align-items-start">
+                <div class="col-lg-6">
+                    <h2 class="section-heading">Let’s Talk About Your Property in Batumi</h2>
+                    <p class="section-subheading">
+                        Ready to buy, rent, or invest in Batumi? Contact me and I’ll reply as soon as possible with clear next steps.
+                    </p>
+                    <ul class="contact-info-list">
+                        <li>
+                            <div class="contact-icon">
+                                <span class="material-icons" aria-hidden="true">phone</span>
+                            </div>
+                            <div>
+                                <div class="text-small text-muted">Phone / WhatsApp</div>
+                                <a href="https://wa.me/995557914194" target="_blank" rel="noopener noreferrer">+995 557 91 41 94</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon">
+                                <span class="material-icons" aria-hidden="true">email</span>
+                            </div>
+                            <div>
+                                <div class="text-small text-muted">Email</div>
+                                <a href="#" class="email-modal-link" data-bs-toggle="modal" data-bs-target="#contactModal">villagia2023@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon">
+                                <span class="material-icons" aria-hidden="true">place</span>
+                            </div>
+                            <div>
+                                <div class="text-small text-muted">Location</div>
+                                <span>Batumi, Georgia</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-2 contact-btns flex-wrap">
+                        <a class="btn btn-primary-brand btn-with-icon btn-call-now" href="https://wa.me/995557914194" target="_blank" rel="noopener noreferrer">
+                            <span class="whatsapp-icon" aria-hidden="true"></span>
+                            <span>Call Now</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map-placeholder">
+                        <h3 class="h6 mb-2">Batumi &amp; Coastal Areas</h3>
+                        <p class="mb-2">
+                            I serve all major neighborhoods of Batumi and nearby coastal areas – including Old Boulevard, city center, new developments, and quieter residential districts.
+                        </p>
+                        <p class="mb-0 text-small text-muted">
+                            During our call, we can discuss which parts of the city best match your lifestyle or investment strategy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer aria-label="Site footer">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-md-4">
+                    <div class="footer-logo">
+                        <img src="https://cdn.breba.app/yason/52a3f69524204208bbc4a97e307b902b/assets/favicon-32x32.png" alt="Blue Wave Real Estate logo">
+                        <span>Blue Wave Real Estate</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <nav class="footer-nav justify-content-md-center">
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#investments">Investments</a>
+                        <a href="#faqs">FAQs</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex flex-column align-items-md-end gap-2">
+                        <div class="footer-social social-links">
+                            <a class="social-link social-link--facebook" href="https://www.facebook.com/profile.php?id=100070818982111" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <span class="material-icons social-icon" aria-hidden="true">facebook</span>
+                            </a>
+                            <a class="social-link social-link--telegram" href="tg://resolve?phone=995557914194" aria-label="Telegram call via app">
+                                <span class="telegram-icon social-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div class="footer-contact">
+                            <span>Phone: <a href="https://wa.me/995557914194" target="_blank" rel="noopener noreferrer">+995 557 91 41 94</a></span><br>
+                            <span>Email: <a href="#" class="email-modal-link" data-bs-toggle="modal" data-bs-target="#contactModal">villagia2023@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © <span id="currentYear"></span> Blue Wave Real Estate. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2 class="modal-title" id="contactModalLabel">Send a Message to Tamara</h2>
+                        <p class="modal-subtitle mb-0">Share a few details and I’ll get back to you as soon as possible.</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close contact form"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" novalidate>
+                        <input type="text" name="honeypot" class="d-none" tabindex="-1" autocomplete="off" aria-hidden="true">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" name="name" required aria-required="true">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" name="email" required aria-required="true">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" name="message" rows="4" required aria-required="true"></textarea>
+                        </div>
+
+                        <!-- StaticForms hidden fields -->
+                        <input type="hidden" name="subject" value="Blue Wave Contact Request">
+                        <input type="hidden" name="replyTo" value="@">
+                        <input type="hidden" name="accessKey" value="sf_ddc23a64e9a97b7aed228cc5">
+
+                        <button type="submit" class="btn btn-primary-brand w-100" id="contactSubmitBtn">
+                            Send Message
+                        </button>
+                        <div id="contactFormStatus" class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendly Modal -->
+    <div class="modal fade" id="calendlyModal" tabindex="-1" aria-labelledby="calendlyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2 class="modal-title" id="calendlyModalLabel">Book a Call or Viewing</h2>
+                        <p class="modal-subtitle mb-0">Choose a time that works for you.</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close booking"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="calendlyEmbed" class="calendly-inline-widget" data-url="https://calendly.com/YOUR_CALENDLY_LINK"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" nonce="MTkwOTM4NzYwMCwyMzc2MzkzMTU3"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async nonce="MTkwOTM4NzYwMCwyMzc2MzkzMTU3"></script>
+
+    <script nonce="MTkwOTM4NzYwMCwyMzc2MzkzMTU3">
+        (function () {
+            const navbar = document.querySelector(".navbar-glass");
+            const yearSpan = document.getElementById("currentYear");
+            const contactForm = document.getElementById("contactForm");
+            const contactStatus = document.getElementById("contactFormStatus");
+            const contactSubmitBtn = document.getElementById("contactSubmitBtn");
+            const calendlyModalEl = document.getElementById("calendlyModal");
+            const calendlyEmbed = document.getElementById("calendlyEmbed");
+
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+
+            // Navbar solid on scroll
+            function updateNavbarState() {
+                if (!navbar) return;
+                const threshold = 10;
+                if (window.scrollY > threshold) {
+                    navbar.classList.add("navbar-solid");
+                } else {
+                    navbar.classList.remove("navbar-solid");
+                }
+            }
+            window.addEventListener("scroll", updateNavbarState, { passive: true });
+            updateNavbarState();
+
+            // Smooth scrolling for internal links (excluding those with data-bs-toggle)
+            document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    const targetId = this.getAttribute("href");
+                    if (!targetId || targetId === "#") return;
+                    if (this.hasAttribute("data-bs-toggle")) return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        event.preventDefault();
+                        const offset = navbar ? navbar.offsetHeight : 0;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - offset + 4;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: "smooth"
+                        });
+
+                        const navbarCollapse = document.getElementById("mainNavbar");
+                        if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+                            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                            if (bsCollapse) {
+                                bsCollapse.hide();
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Contact form submit via StaticForms
+            if (contactForm) {
+                contactForm.addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    if (!contactForm.checkValidity()) {
+                        contactForm.reportValidity();
+                        return;
+                    }
+
+                    const formData = new FormData(contactForm);
+                    const payload = {};
+                    formData.forEach(function (value, key) {
+                        payload[key] = value;
+                    });
+
+                    contactSubmitBtn.disabled = true;
+                    contactSubmitBtn.textContent = "Sending...";
+                    contactStatus.textContent = "";
+                    contactStatus.className = "form-status";
+
+                    fetch("https://api.staticforms.xyz/submit", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(payload)
+                    })
+                        .then(function (response) {
+                            if (!response.ok) {
+                                throw new Error("Network response was not ok");
+                            }
+                            return response.json();
+                        })
+                        .then(function (data) {
+                            if (!data || data.success !== true) {
+                                throw new Error("Form submission failed");
+                            }
+                            contactStatus.textContent = "Thank you! Your message has been sent.";
+                            contactStatus.classList.add("form-status-success");
+                            contactForm.reset();
+                        })
+                        .catch(function () {
+                            contactStatus.textContent = "Something went wrong. Please try again or contact me directly at villagia2023@gmail.com.";
+                            contactStatus.classList.add("form-status-error");
+                        })
+                        .finally(function () {
+                            contactSubmitBtn.disabled = false;
+                            contactSubmitBtn.textContent = "Send Message";
+                        });
+                });
+            }
+
+            // Initialize Calendly when modal is shown
+            if (calendlyModalEl && calendlyEmbed) {
+                calendlyModalEl.addEventListener("shown.bs.modal", function () {
+                    const url = calendlyEmbed.getAttribute("data-url");
+                    if (window.Calendly && url && !calendlyEmbed.dataset.initialized) {
+                        window.Calendly.initInlineWidget({
+                            url: url,
+                            parentElement: calendlyEmbed
+                        });
+                        calendlyEmbed.dataset.initialized = "true";
+                    }
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

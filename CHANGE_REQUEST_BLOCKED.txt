@@ -1,0 +1,1 @@
+I reviewed the request step by step: the visible “Property Management” item needs one bullet removed, but there are no editable source files available in this session, so I can’t safely apply the website change. Provide the project file (typically /index.html) in the editable file list, and I can replace that specific line cleanly.

@@ -38,6 +38,7 @@
     <!-- CSS Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=arrow_forward,check_circle,email,handshake,home,insights,location_city,manage_accounts,meeting_room,person,phone,place,trending_up,verified,waves" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:wght@500;700&display=swap" rel="stylesheet">
@@ -964,6 +965,165 @@
             color: #4B5563;
         }
 
+        /* Reviews */
+        #reviews {
+            background-color: #F9FBFF;
+        }
+
+        .reviews-shell {
+            padding: 0;
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: clamp(1rem, 2vw, 1.5rem);
+            align-items: stretch;
+        }
+
+        .review-card {
+            background-color: var(--color-white);
+            border-radius: var(--radius-card);
+            padding: clamp(1.25rem, 2vw, 1.6rem);
+            box-shadow: 0 12px 28px rgba(10, 39, 64, 0.08);
+            border: 1px solid rgba(227, 230, 236, 0.9);
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+        }
+
+        .review-avatar {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            overflow: hidden;
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0f766e;
+            color: var(--color-white);
+            font-size: 1.7rem;
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        .review-avatar--blue {
+            background-color: #1565b0;
+        }
+
+        .review-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .review-meta {
+            min-width: 0;
+        }
+
+        .review-name {
+            margin: 0;
+            font-size: clamp(1rem, 1.35vw, 1.15rem);
+            font-weight: 600;
+            color: var(--color-deep-navy);
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.25;
+        }
+
+        .review-time {
+            margin: 0.1rem 0 0;
+            color: #4B5563;
+            font-size: 0.9rem;
+        }
+
+        .review-stars {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .review-star {
+            width: 1.0625rem;
+            height: 1rem;
+            flex: 0 0 auto;
+        }
+
+        .review-body {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #434955;
+        }
+
+        .review-body p {
+            margin-bottom: 0;
+        }
+
+        .review-more {
+            color: #2f74da;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .review-footer {
+            margin-top: auto;
+            padding-top: 0.25rem;
+            background-color: var(--color-white) !important;
+        }
+
+        .review-card .review-footer,
+        .review-card .review-footer * {
+            background-color: var(--color-white) !important;
+            background-image: none !important;
+        }
+
+        .review-google-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            width: auto;
+            max-width: 100%;
+            padding: 0;
+            border: 0;
+            background-color: var(--color-white) !important;
+            background-image: none !important;
+            color: #434955;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: 0;
+            box-shadow: none !important;
+        }
+
+        .review-google-link:hover,
+        .review-google-link:focus {
+            color: #2f74da;
+            text-decoration: none;
+            background-color: var(--color-white) !important;
+            box-shadow: none !important;
+        }
+
+        .review-google-icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            object-fit: contain;
+            flex: 0 0 auto;
+            background: transparent !important;
+            border-radius: 0;
+            box-shadow: none !important;
+        }
+
         /* FAQs */
         #faqs {
             background-color: #F9FBFF;
@@ -1204,6 +1364,10 @@
             .process-steps {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
+
+            .reviews-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
         }
 
         @media (max-width: 767.98px) {
@@ -1249,6 +1413,15 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+
+            .reviews-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 1rem;
+            }
+
+            .review-card {
+                padding: 1.25rem;
+            }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1271,6 +1444,12 @@
     </style>
 </head>
 <body id="top">
+    <svg aria-hidden="true" focusable="false" width="0" height="0" class="position-absolute">
+        <symbol id="icon-review-star" viewBox="0 0 17 16">
+            <path d="M9.87406 1.0162C9.30404 -0.338737 7.36262 -0.338728 6.79261 1.0162L5.33114 4.49014L1.53769 4.79081C0.0581456 4.90808 -0.541781 6.73355 0.585471 7.68821L3.47567 10.1359L2.59267 13.7957C2.24827 15.2231 3.81893 16.3513 5.08562 15.5864L8.33333 13.6252L11.581 15.5864C12.8477 16.3513 14.4184 15.2231 14.074 13.7957L13.191 10.1359L16.0812 7.68821C17.2085 6.73354 16.6085 4.90808 15.129 4.79081L11.3355 4.49014L9.87406 1.0162Z" fill="#FAC905"></path>
+        </symbol>
+    </svg>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-glass">
         <div class="container">
@@ -1350,6 +1529,7 @@
                             <span class="whatsapp-icon" aria-hidden="true"></span>
                             <span>Call Now</span>
                         </a>
+                        <a class="btn btn-outline-sand" href="#reviews">Reviews</a>
                     </div>
                     <p class="hero-note text-small">
                         Personal, multilingual support for buyers, renters, and investors.
@@ -1659,7 +1839,105 @@
             </div>
         </div>
     </section>
+    <!-- Reviews -->
+    <section id="reviews" class="section-padding">
+        <div class="container">
+            <h2 class="section-heading text-center">Reviews</h2>
+            <p class="section-subheading text-center mx-auto">
+                See what buyers, renters, and investors say about working with Tamara in Batumi.
+            </p>
+            <div class="reviews-shell">
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <header class="review-header">
+                            <div class="review-avatar" aria-hidden="true">A</div>
+                            <div class="review-meta">
+                                <h3 class="review-name">Arnold Bothma</h3>
+                                <p class="review-time">4 days ago</p>
+                            </div>
+                        </header>
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                        </div>
+                        <div class="review-body">
+                            <p>
+                                If you are interested in buying a property in Georgia and also want commitment from your realtor, this is the place. I met Tamara (still working at a different realtor) via the Internet back in 2018. Later that year we came for our first visit to Georgia and arranged to meet Tamara in person and t
+                            </p>
+                            <a class="review-more" href="https://www.google.com/maps/reviews/@41.6240067,41.6525937,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwWVVtbFdSVVZGUTJvNU9FRkxjRmhzTWpsUFlVRRAB!2m1!1s0x0:0xec10580d757cf0bf" target="_blank" rel="noopener noreferrer">... See more</a>
+                        </div>
+                        <footer class="review-footer">
+                            <a class="review-google-link" href="https://www.google.com/maps/reviews/@41.6240067,41.6525937,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwWVVtbFdSVVZGUTJvNU9FRkxjRmhzTWpsUFlVRRAB!2m1!1s0x0:0xec10580d757cf0bf" target="_blank" rel="noopener noreferrer">
+                                <img class="review-google-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="" loading="lazy" decoding="async">
+                                <span>View on Google</span>
+                            </a>
+                        </footer>
+                    </article>
 
+                    <article class="review-card">
+                        <header class="review-header">
+                            <div class="review-avatar review-avatar--blue" aria-hidden="true">R</div>
+                            <div class="review-meta">
+                                <h3 class="review-name">Reinet Bothma</h3>
+                                <p class="review-time">4 days ago</p>
+                            </div>
+                        </header>
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                        </div>
+                        <div class="review-body">
+                            <p>
+                                Best real estate agent in Batumi/Ajara and perfectly fluent in English. Her connection to highly skilled craftsman in the construction industry makes her the perfect choice for your next real estate transaction.
+                            </p>
+                        </div>
+                        <footer class="review-footer">
+                            <a class="review-google-link" href="https://search.google.com/local/reviews?placeid=ChIJicEnxXwGzEIRv_B8dQ1YEOw" target="_blank" rel="noopener noreferrer">
+                                <img class="review-google-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="" loading="lazy" decoding="async">
+                                <span>View on Google</span>
+                            </a>
+                        </footer>
+                    </article>
+
+                    <article class="review-card">
+                        <header class="review-header">
+                            <div class="review-avatar">
+                                <img src="https://cdn.breba.app/69d2735d002b271ce5ecce44/c3e4cd3407dd453186e071879ad8fab0/assets/nino_avatar.png" alt="Nino Kasradze" loading="lazy" decoding="async">
+                            </div>
+                            <div class="review-meta">
+                                <h3 class="review-name">Nino Kasradze</h3>
+                                <p class="review-time">2 weeks ago</p>
+                            </div>
+                        </header>
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                            <svg class="review-star" aria-hidden="true"><use href="#icon-review-star"></use></svg>
+                        </div>
+                        <div class="review-body">
+                            <p>
+                                Tamara, helped me a lot, in buying a property in batumi. she’s a real professional in this field
+                            </p>
+                        </div>
+                        <footer class="review-footer">
+                            <a class="review-google-link" href="https://search.google.com/local/reviews?placeid=ChIJicEnxXwGzEIRv_B8dQ1YEOw" target="_blank" rel="noopener noreferrer">
+                                <img class="review-google-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="" loading="lazy" decoding="async">
+                                <span>View on Google</span>
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FAQs -->
     <section id="faqs" class="section-padding">
@@ -1812,6 +2090,7 @@
                         <a href="#about">About</a>
                         <a href="#services">Services</a>
                         <a href="#investments">Investments</a>
+                        <a href="#reviews">Reviews</a>
                         <a href="#faqs">FAQs</a>
                         <a href="#contact">Contact</a>
                     </nav>
